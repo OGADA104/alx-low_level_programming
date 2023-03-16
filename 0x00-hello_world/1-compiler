@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp -c $CFILE -o c 
+cpp -c $CFILE -o basename${CFILE}.o 
