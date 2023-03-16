@@ -5,7 +5,7 @@
 * Description : 'this prigram prints using printf function'
 * @parameter: no parameter
 */
-{
+
 int main(void)
 /*
 *this function prints a string using puts
