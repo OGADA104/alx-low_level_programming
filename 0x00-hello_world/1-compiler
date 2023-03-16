@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp -c $CFILE -o c.o 
+cpp -S $CFILE -o c.o 
