@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp $cfile -o c\n 
+cpp $CFILE -o c\n 
