@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -s $CFILE basename${CFILE}.s
+gcc -s $CFILE 
