@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp -c $CFILE -o basename${CFILE}.o 
+gcc -c $CFILE -o basename${CFILE}.o 
