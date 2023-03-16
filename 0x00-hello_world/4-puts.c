@@ -1,8 +1,15 @@
 #include<stdio.h>
-/*this function prints a string using puts*/
+/*ptint using puts*/
 
+
+/**
+*main - this function prints a string using puts
+*
+*main - outputs stdio using puts
+*
+* Return: 0 if successful
+*/
 int main(void)
-/*this function prints a string using puts*/
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
