@@ -2,14 +2,14 @@
 /*
 * this function prints a string using puts
 *this function prints a string using puts
-* Description : 'this prigram prints using printf function'
+* Description : "this prigram prints using printf function"
 * @parameter: no parameter
 */
 
 int main(void)
 /*
 *this function prints a string using puts
-* Description : 'this prigram prints using printf function'
+* Description : "this prigram prints using printf function"
 * @parameter: no parameter
 */
 {
