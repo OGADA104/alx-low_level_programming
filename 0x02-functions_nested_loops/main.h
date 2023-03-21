@@ -1,3 +1,2 @@
-int _putchar(char _putchar){
-	return (0);
-}
+int _putchar(char c);
+int main(void);
