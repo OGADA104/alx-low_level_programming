@@ -19,8 +19,10 @@ void print_times_table(int n)
 				printf("%d", i * j);
 			else
 				printf("%4d", i * j);
-			if (i * j != (n * n))
+			if (i * j != n * n && j != n)
 				printf(",");
+			if (j == n)
+				printf("\n");
 		}
 		printf("\n");
 	}
