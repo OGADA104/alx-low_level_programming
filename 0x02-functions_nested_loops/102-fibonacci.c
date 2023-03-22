@@ -7,12 +7,15 @@
 */
 int main(void)
 {
-	int i = 1, j;
+	int prev1 = 1, prev2 = 2, current, j;
 
-	for (j = 1; j <= 50; j++)
+	printf("%d,%d,", prev1, prev2);
+	for (j = 3; j <= 50; j++)
 	{
-		printf("%d", i);
-		i = i + i;
+		current = prev1 + prev2;
+		printf("%d", current);
+		prev1 = prev2;
+		prev2 = current;
 		if (j != 50)
 			printf(",");
 	}
