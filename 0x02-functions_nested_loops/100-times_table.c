@@ -20,8 +20,7 @@ void print_times_table(int n)
 			else
 				printf("%4d", i * j);
 			if (i * j != n * n && j != n)
-				printf(",");
-		
+				printf(",");	
 		}
 		printf("\n");
 	}
