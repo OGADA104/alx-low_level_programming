@@ -18,4 +18,5 @@ void more_numbers(void)
 		}
 		printf("\n");
 	}
+	printf("\n");
 }
