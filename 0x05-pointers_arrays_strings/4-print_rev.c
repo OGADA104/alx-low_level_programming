@@ -3,7 +3,6 @@
 #include<string.h>
 /**
 *print_rev - print a string in revers
-;
 *@s: input string
 */
 void print_rev(char *s)
