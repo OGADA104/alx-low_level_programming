@@ -5,7 +5,8 @@
 *@s: input string
 *Return: 0 if no numbers
 */
-int _atoi(char *s) {
+int _atoi(char *s)
+{
 	int dig;
 
 	dig = atoi(s);
