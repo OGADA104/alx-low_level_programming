@@ -1,9 +1,9 @@
 #include "main.h"
 #include<math.h>
 /**
-*
-*
-*
+*_sqrt_recursion - find square root
+*@n: input number
+*Return: -1, or square root
 *
 */
 int _sqrt_recursion(int n)
@@ -12,5 +12,10 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (_sqrt_recursion(n));
+	if (n % 2 != 0 || n % 3 != 0 || n % 5 != 0 || n % 7 != 0)
+	{
+		return (-1);
+	}
+	else
+		return (_sqrt_recursion(n));
 }
