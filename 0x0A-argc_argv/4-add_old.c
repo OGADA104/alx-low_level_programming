@@ -14,9 +14,10 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		psd = atoi(argv[i]);
-		if (psd >= 0 && psd != isalpha(psd))
+		if (psd >= 0)
 		{
 			sum += psd;
+			printf("%d\n", sum);
 		}
 		else
 		{
@@ -24,6 +25,5 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
-	printf("%d\n", sum);
 	return (0);
 }
