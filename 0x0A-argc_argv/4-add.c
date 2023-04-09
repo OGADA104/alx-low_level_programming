@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		psd = atoi(argv[i]);
-		if (psd > 0)
+		if (psd >= 0)
 		{
 			sum += psd;
 		}
