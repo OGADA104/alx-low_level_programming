@@ -18,6 +18,10 @@ int main(int argc, char *argv[])
 		{
 			sum += psd;
 		}
+		else if (psd < 0)
+		{
+			sum = 0;
+		}
 		else
 		{
 			printf("Error\n");
