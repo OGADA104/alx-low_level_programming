@@ -1,15 +1,16 @@
 #include"main.h"
 #include<string.h>
 #include<stdlib.h>
-/*
+/**
 **_strdup - copy string to string 2
-*@*str: pointer to input string
-*
+*@str: pointer to input string
+*Return: pointer to str 2
 *
 */
 char *_strdup(char *str)
 {
-	char *str2 = malloc(sizeof(str) * (strlen(str)+ 1));
+	char *str2 = malloc(sizeof(str) * (strlen(str) + 1));
+
 	if (str == NULL)
 	{
 		return (NULL);
