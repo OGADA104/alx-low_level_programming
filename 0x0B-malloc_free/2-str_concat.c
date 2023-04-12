@@ -16,11 +16,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	else
+	else if (strlen(s1) > 0 || strlen(s2) > 0)
 	{
 		strcpy(srt12, s1);
 		strcat(srt12, s2);
-		return (srt12);
 	}
+	return (srt12);
 	free(srt12);
 }
