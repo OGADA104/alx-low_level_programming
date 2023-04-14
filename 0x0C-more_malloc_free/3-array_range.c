@@ -15,6 +15,8 @@ int *array_range(int min, int max)
 	int *p;
 	int size, i;
 
+	if (min % 1 != 0 || max % 1 != 0)
+		return (NULL);
 	if (min > max)
 		return (NULL);
 	size = max - min + 1;
