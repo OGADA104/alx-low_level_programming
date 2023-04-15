@@ -9,17 +9,15 @@
 */
 char *_strdup(char *str)
 {
-	char *str2 = malloc(sizeof(str) * (strlen(str) + 1));
+	char *str2;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	else
-	{
-		strcpy(str2, str);
-		return (str2);
-
-	}
-	free(str2);
+	str2 = malloc(sizeof(char) * (strlen(str) + 1));
+	if (str2 == NULL)
+		return (NULL);
+	strcpy(str2, str);
+	return (str2);
 }
