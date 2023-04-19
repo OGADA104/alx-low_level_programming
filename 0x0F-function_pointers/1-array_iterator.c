@@ -2,10 +2,10 @@
 #include<stdlib.h>
 #include<stddef.h>
 /**
- *
- *
- *
- *
+ *array_iterator - loops throuth the array
+ *@array: input array
+ *@size: size of the array
+ *@action: function pointer to iterator
  *
  *
  */
