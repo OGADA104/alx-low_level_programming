@@ -9,12 +9,11 @@
 *
 *
 */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]__attribute__((unused)))
 {
-	if (argv[] != NULL)
+	if (argc > 0)
 	{
-		printf("%d", argc);
+		printf("%d\n", argc - 1);
 	}
-	printf('\n');
 	return (0);
 }
