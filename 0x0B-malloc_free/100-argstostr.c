@@ -1,30 +1,36 @@
 #include "main.h"
 #include<stdlib.h>
 #include<stdio.h>
+#include<string.h>
 /**
- *
- *
- *
- *
+ **argstostr - print arguments passed
+ *@ac: integer count
+ *@av: argument passed
+ *Return: pointer to args or null
  *
  *
  */
 char *argstostr(int ac, char **av)
 {
-	int i;
-	char *p;
+	int i, t_len = 0;
+	char **p;
 
-	if (ac == 0 || *av == NULL)
+	if (ac == 0 || *av == NULL || *av == NULL)
 		return (NULL);
-	if (*p != NULL)
+	for (i = 0; i < ac; i++)
 	{
-		*p = malloc(sizeof( *) * ac);
+		t_len += strlen(av[i]) + 1;
+	}
+	p = malloc((sizeof(char *) * ac) + 1);
+	if (p != NULL)
+	{
 		for (i = 0; i < ac; i++)
 		{
-			p[i] = av[i];
+			p[i] = malloc(strlen(av[i]) + 1);
+			strcpy(p[i], av[i]);
 			printf("%s\n", p[i]);
 		}
-		return (*p);
+		return (p[i]);
 	}
 	return (NULL);
 
