@@ -12,7 +12,9 @@
 void *malloc_checked(unsigned int b)
 {
 	unsigned int *p;
-
+	
+	if (b == '\0')
+		exit(98);
 	p = malloc(sizeof(b));
 	if (p != NULL)
 	{
