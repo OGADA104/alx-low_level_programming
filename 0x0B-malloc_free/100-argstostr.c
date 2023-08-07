@@ -12,24 +12,23 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, t_len = 0;
-	char **p;
+	int i, j, total_length = 0;
+	char *p;
 
-	if (ac == 0 || *av == NULL || *av == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		t_len += strlen(av[i]) + 1;
+		total_length += strlen(av[i]);
 	}
-	p = malloc((sizeof(char *) * ac) + 1);
-	if (p != NULL)
+	p = malloc(sizeof(char) * (total_length + ac + 1));
+	if (p == NULL)
+		return (NULL);
+	for (i = 0, j = 0; i < ac; i++)
 	{
-		for (i = 0; i < ac; i++)
-		{
-			p[i] = malloc(strlen(av[i]));
-			strcpy(p[i], av[i]);
-			printf("%s\n", p[i]);
-		}
+		strcpy(p + j, av[i]);
+		j += strlen(av[i]);
+		p[j++] = '\n';
 	}
-	return (0);
+	return (p);
 }
