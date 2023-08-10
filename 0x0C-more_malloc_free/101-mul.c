@@ -36,10 +36,10 @@ int _strlen(char *str)
  */
 void _multiply(char *num1, char *num2)
 {
-	int *len1;
-	int *len2, i, j;
+	int len1;
+	int len2, i, j;
 	int len_result;
-	int result, start;
+	int *result, start;
 
 	len1 = _strlen(num1);
 	len2 = _strlen(num2);
@@ -80,7 +80,8 @@ void _multiply(char *num1, char *num2)
  */
 int main(int argc, char *argv[])
 {
-	char *num1, *num2;
+	char *num1;
+	char *num2;
 	int i;
 
 	if (argc != 3)
