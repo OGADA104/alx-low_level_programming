@@ -2,7 +2,8 @@
 #include "lists.h"
 
 /**
- * delete_dnodeint_at_index - Deletes the node at index index of a dlistint_t list.
+ * delete_dnodeint_at_index - Deletes the node at
+ * index index of a dlistint_t list.
  * @head: A pointer to a pointer to the head of the doubly linked list.
  * @index: The index of the node that should be deleted.
  *
@@ -11,7 +12,7 @@
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *current = *head;
-        unsigned int count = 0;
+	unsigned int count = 0;
 
 	if (head == NULL || *head == NULL)
 		return (-1);
