@@ -9,27 +9,27 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 RM = rm -f
 
 # Default target: build the executable
-all: $(OBJ) $(NAME)
+all: $(NAME)
 
 # Build the executable using object files
 $(NAME): $(OBJ)
-	@$(CC) -o $@ $^
+	$(CC) -o $(NAME) $(OBJ)
 
 # Compile source files to object files with specified compiler flags
 %.o: %.c m.h
-	@$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 # Clean rule to delete temporary files and the executable
 clean:
-	@$(RM) *~ $(NAME)
+	$(RM) *~ $(NAME)
 
 # OcLean rule to delete object files
 oclean:
-	@$(RM) $(OBJ)
+	$(RM) $(OBJ)
 
 # Fclean rule to delete temporary files, the executable, and object files
 fclean: clean oclean
-	@$(RM) $(NAME)
+	$(RM) $(NAME)
 
 # Re rule to force recompilation of all source files
 re: fclean all
