@@ -1,0 +1,15 @@
+# Makefile for school executable
+
+# Variables
+CC = gcc
+SRC = main.c school.c
+EXECUTABLE = school
+
+# Default target: build the executable
+all:
+	$(CC) $(SRC) -o $(EXECUTABLE)
+
+# Clean rule to remove the executable
+clean:
+	rm -f $(EXECUTABLE)
+
